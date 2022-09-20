@@ -5,7 +5,7 @@
 @section('title', 'index.blade.php')
 
 @section('content')
-<p>{{$content}}</p>
+<p>Todo List</p>
   <form action="/" method="POST">
     @csrf
     <input type="text" name="content" >

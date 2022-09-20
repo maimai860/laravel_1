@@ -3,14 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Post;
+use App\Models\Todo;
 
 class PostController extends Controller
 {
     public function index()
     {
-        $Posts = Post::all();
-        return view('index', ['Post' => $Post]);
+        $Todos = todo::all();
+        return view('index', ['todo' => $Todos]);
     }
     public function find()
     {
@@ -18,9 +18,9 @@ class PostController extends Controller
     }
     public function search(Request $request)
     {
-        $Posts = Post::find($request->input);
+        $Todo = todo::find($request->input);
         $param = [
-            'Post' => $Posts,
+            'todo' => $todos,
             'input' => $request->input
         ];
         return view('find', $param);
