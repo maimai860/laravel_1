@@ -4,4 +4,4 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 
 Route::get('/', [PostController::class, 'index']);
-Route::post('/', [PostController::class, 'post']);
+Route::post('/', [PostController::class, 'index']);
