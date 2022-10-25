@@ -20,7 +20,7 @@ class PostController extends Controller
     {
         $Todo = todo::find($request->input);
         $param = [
-            'todo' => $todos,
+            'todos' => $todos,
             'input' => $request->input
         ];
         return view('find', $param);

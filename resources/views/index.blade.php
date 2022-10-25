@@ -13,4 +13,5 @@
   </form>
 @foreach ($todos as $todo)
 {{$todo->content}}
+@endforeach
 @endsection
