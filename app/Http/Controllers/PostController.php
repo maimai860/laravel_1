@@ -10,7 +10,7 @@ class PostController extends Controller
     public function index()
     {
         $todos = todo::all();
-        return view('index', ['todo' => $todos]);
+        return view('index', ['todos' => $todos]);
     }
     public function find()
     {
